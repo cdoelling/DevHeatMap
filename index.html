@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CA Dev HeatMap</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+    <style>
+          html, body {
+            height: 100%;
+            margin: 0;
+            padding-top:80px;
+          }
+          .name {
+            text-align: center;
+            font-family: monospace;
+            font-size: 1em;
+            margin-top: -140px;
+            padding-bottom: 20px,
+          }
+          #map {
+            height: 100%;
+          }
+
+    </style>
+</head>
+  <body>
+<!-- Initialize Map  -->
+    <div class="name"><h1>Developer Heat Map</h1></div>
+    <!-- <div class="logo"><img src:"/DEV MKTG/DevHeatMap/ca-logo.png"></div>    -->
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcsfXQxhLfiNUNU1kM12ed0znFA-k8qZA&callback=initMap"
+    async defer></script>
+
+    <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcsfXQxhLfiNUNU1kM12ed0znFA-k8qZA&libraries=visualization">
+    </script>
+
+    <script>
+    var cadevData = [
+
+      {location: new google.maps.LatLng(17.4254196,78.3349578), weight: 12},
+      {location: new google.maps.LatLng(50.0278166,14.4930487), weight: 11},
+      {location: new google.maps.LatLng(37.3857826,-121.9753225), weight: 10},
+      {location: new google.maps.LatLng(33.0789714,-96.8110784), weight: 9},
+      {location: new google.maps.LatLng(40.5244307,-105.0244388), weight: 8},
+      {location: new google.maps.LatLng(42.2953163,-71.488151), weight: 7},
+      {location: new google.maps.LatLng(12.9591505,77.6459774), weight: 6},
+      {location: new google.maps.LatLng(40.020194,-105.2512472), weight: 5},
+      {location: new google.maps.LatLng(49.284005,-123.1213143), weight: 4},
+      {location: new google.maps.LatLng(40.4534992,-80.1909099), weight: 3},
+      {location: new google.maps.LatLng(41.808818,-88.1174986), weight: 2},
+      {location: new google.maps.LatLng(32.2610569,34.4118136), weight: 1},
+    ];
+
+    var customMapType = new google.maps.StyledMapType([
+            {
+              stylers: [
+                {hue: '#820000'},
+                {visibility: 'simplified'},
+                {gamma: 0.5},
+                {weight: 0.5}
+              ]
+            },
+            {
+              elementType: 'labels',
+              stylers: [{visibility: 'off'}]
+            },
+            {
+              featureType: 'water',
+              stylers: [{color: '#F2F2F2'}]
+            }
+          ], {
+            name: 'Custom Style'
+        });
+        var customMapTypeId = 'custom_style';
+
+
+    var boulder = new google.maps.LatLng(37.7450122,-25.6959568);
+
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: boulder,
+      zoom: 3,
+      mapTypeControlOptions: {
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+            }
+          });
+
+    var heatmap = new google.maps.visualization.HeatmapLayer({
+      data: cadevData,
+      radius: 20,
+    });
+    heatmap.setMap(map);
+
+    </script>
+
+  </body>
+</html>
