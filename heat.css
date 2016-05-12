@@ -1,0 +1,161 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding-top:80px;
+}
+.name {
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1em;
+  margin-top: -160px;
+  padding-bottom: 20px,
+}
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.logo button {
+  background-color: #fff;
+  border: none;
+}
+
+.directions {
+  position: absolute;
+  top: 9px;
+  left: 165px;
+}
+
+.directions h3 {
+  font-family: 'Coming Soon',cursive;
+  font-size: .9em;
+}
+
+.arrow {
+  position: absolute;
+  top: 10px;
+  left: 110px;
+}
+/*.menu {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  padding-right: 15px;
+}
+.menu button {
+  background-color: #fff;
+  border: none;
+}*/
+
+header {
+  z-index: 50;
+}
+
+header a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+}
+
+.main-header {
+  padding: 25px;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s ease;
+  a {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 32px;
+  }
+}
+
+.page-wrap {
+  float: left;
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.main-nav {
+  position: absolute;;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: #f2f2f2;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  z-index: 100;
+}
+
+.main-nav h3 {
+  text-align: center;
+  color: #696969;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.4em;
+}
+  .main-nav a {
+    display: block;
+    color: black;
+    padding: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+
+}
+
+.main-nav a:hover {
+  background: #269da4;
+}
+
+.main-nav a:focus {
+  background: #269da4;
+}
+/*.main-nav a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 34px;
+  }
+}*/
+
+.close-menu {
+  display: none;
+}
+
+
+#main-nav:target {
+  width: 20%;
+}
+#main-nav:target + .page-wrap {
+  width: 80%;
+  .open-menu {
+
+     display: none;
+  }
+  .close-menu {
+    display: block;
+  }
+
+  .main-header {
+    width: 80%;
+    right: 20%;
+  }
+}
+
+#map {
+  height: 100%;
+}
