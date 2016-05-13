@@ -28,6 +28,11 @@ html, body {
   border: none;
 }
 
+.logo img {
+  border: none;
+}
+
+
 .directions {
   position: absolute;
   top: 9px;
@@ -37,6 +42,7 @@ html, body {
 .directions h3 {
   font-family: 'Coming Soon',cursive;
   font-size: .9em;
+  color: #696969;
 }
 
 .arrow {
@@ -119,6 +125,7 @@ header a {
   background: #269da4;
 }
 
+
 .main-nav a:focus {
   background: #269da4;
 }
@@ -132,6 +139,17 @@ header a {
   }
 }*/
 
+.open-menu {
+  position: absolute;
+  top: -65px;
+  right: 50px;
+  color: black;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+}
 .close-menu {
   display: none;
 }
@@ -155,6 +173,18 @@ header a {
     right: 20%;
   }
 }
+
+.nav-ins {
+  display: none;
+}
+
+a:hover + .nav-ins {
+  display: block;
+}
+
+
+/*MAP CSS*/
+
 
 #map {
   height: 100%;

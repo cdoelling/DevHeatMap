@@ -40,7 +40,22 @@
       }
     ];
 
-
+    var gradientCABlue = [
+    'rgba(0, 255, 255, 0)',
+    'rgba(0, 255, 255, 1)',
+    'rgba(0, 191, 255, 1)',
+    'rgba(0, 127, 255, 1)',
+    'rgba(0, 63, 255, 1)',
+    'rgba(0, 0, 255, 1)',
+    'rgba(0, 0, 223, 1)',
+    'rgba(0, 0, 191, 1)',
+    'rgba(0, 0, 159, 1)',
+    'rgba(0, 0, 127, 1)',
+    'rgba(63, 0, 91, 1)',
+    'rgba(127, 0, 63, 1)',
+    'rgba(191, 0, 31, 1)',
+    'rgba(255, 0, 0, 1)'
+    ];
 
     var island = new google.maps.LatLng(37.7450122,-25.6959568);
 
@@ -53,34 +68,14 @@
 
     var heatmap = new google.maps.visualization.HeatmapLayer({
       data: cadevData,
+      gradient: gradientCABlue,
       radius: 20,
     });
-    heatmap.setMap(map);
+    // heatmap.setMap(map);
+    heatmap.setMap(null);
 
   function toggleHeatmap() {
   heatmap.setMap(heatmap.getMap() ? null : map);
   }
 
-
-$(document).ready(function () {
-    $('.slideout-menu-toggle').on('click', function(event){
-    	event.preventDefault();
-    	// create menu variables
-    	var slideoutMenu = $('.slideout-menu');
-    	var slideoutMenuWidth = $('.slideout-menu').width();
-
-    	// toggle open class
-    	slideoutMenu.toggleClass("open");
-
-    	// slide menu
-    	if (slideoutMenu.hasClass("open")) {
-	    	slideoutMenu.animate({
-		    	left: "0px"
-	    	});
-    	} else {
-	    	slideoutMenu.animate({
-		    	left: -slideoutMenuWidth
-	    	}, 250);
-    	}
-    });
-});
+  
