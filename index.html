@@ -3,7 +3,7 @@
 <head>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
-  <link href='heat.css' rel="stylesheet" type="text/css">
+  <link href='file:///Users/cdoelling/Desktop/DEV%20MKTG/DevHeatMap/heat.css' rel="stylesheet" type="text/css">
   <title>Dev HeatMap</title>
   <meta name="viewport" content="initial-scale=1.0">
   <meta charset="utf-8">
@@ -18,43 +18,74 @@
     <div class="directions"><h3>Toggle CA Sites</h3></div>
     <div class="arrow"><img src="http://image005.flaticon.com/1/png/512/64/64783.png" height="50" width="50"></div>
 
+  <!-- <div class="page-wrap"> -->
+    <header class="main-header">
+      <a href="#main-nav" class="open-menu">
+        ☰
+      </a>
+      <a href="#" class="close-menu">
+        ☰
+      </a>
+    </header>
+  <!-- </div> -->
 
     <nav class="main-nav" id="main-nav">
-      <h3>Verticals</h3>
-      <a href="#">Insurance</a>
+
+      <a href="#">Insurance <div class="x-close">[X]</div></a>
         <ul class="nav-ins">
-          <li>AIG</li>
-          <li>All State</li>
-          <li>American Family</li>
-          <li>Cigna</li>
+          <li><button onclick="toggleAIG()">AIG</button></li>
+          <li><button onclick="toggleAll()">ALL STATE</button></li>
+          <li><button onclick="toggleAmFam()">AMERICAN FAMILY</button></li>
+          <li><button onclick="toggleCigna()">CIGNA</button></li>
+          <li><button onclick="toggleVA()">Dept. VA</button></li>
+          <li><button onclick="toggleKaiser()">KAISER</button></li>
+          <li><button onclick="toggleLM()">LIBERTY MUTUAL</button></li>
+          <li><button onclick="toggleMet()">METLIFE</button></li>
+          <li><button onclick="toggleUH()">UNITED HEALTH</button></li>
         </ul>
-      <a href="#">Financial Services</a>
-      <a href="#">Health Care</a>
-      <a href="#">Manufacturing</a>
-      <a href="#">Oil and Gas</a>
-      <a href="#">Retail</a>
-      <a href="#">Technology</a>
-      <a href="#">Telecom</a>
-      <a href="#">Transportation</a>
-      <a href="#">Utilities</a>
+
+      <a href="#">Financial Services<div class="x-close">[X]</div></a>
+        <ul class="nav-fs">
+          <li><button onclick="toggleAMEX()">AMEX</button></li>
+          <li><button onclick="toggleBOA()">BANK OF AMERICA</button></li>
+          <li><button onclick="toggleBNP()">BNP PARIBAS</button></li>
+          <li><button onclick="toggleCS()">CHARLES SCHWAB</button></li>
+          <li><button onclick="toggleFidelity()">FIDELITY</button></li>
+          <li><button onclick="toggleJP()">JP MORGAN CHASE</button></li>
+          <li><button onclick="toggleMS()">MORGAN STANLEY</button></li>
+          <li><button onclick="toggleRBS()">RBS</button></li>
+          <li><button onclick="toggleSAN()">BANCO SANTANDER</button></li>
+          <li><button onclick="toggleWF()">WELLS FARGO</button></li>
+        </ul>
+
+      <a href="#">Health Care<div class="x-close">[X]</div></a>
+        <ul class="nav-health">
+          <li><button onclick="()"></button></li>
+          <li><button onclick="()"></button></li>
+          <li><button onclick="()"></button></li>
+          <li><button onclick="()"></button></li>
+          <li><button onclick="()"></button></li>
+          <li><button onclick="()"></button></li>
+          <li><button onclick="()"></button></li>
+          <li><button onclick="()"></button></li>
+          <li><button onclick="()"></button></li>
+          <li><button onclick="()"></button></li>
+        </ul>
+
+      <a href="#">Manufacturing<div class="x-close">[X]</div></a>
+      <a href="#">Oil and Gas<div class="x-close">[X]</div></a>
+      <a href="#">Retail<div class="x-close">[X]</div></a>
+      <a href="#">Technology<div class="x-close">[X]</div></a>
+      <a href="#">Telecom<div class="x-close">[X]</div></a>
+      <a href="#">Transportation<div class="x-close">[X]</div></a>
+      <a href="#">Utilities<div class="x-close">[X]</div></a>
     </nav>
 
-<!-- <div class="page-wrap"> -->
-      <header class="main-header">
-        <a href="#main-nav" class="open-menu">
-          ☰
-        </a>
-        <a href="#" class="close-menu">
-          ☰
-        </a>
-
-      </header>
-<!-- </div> -->
 
     <div id="map"></div>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcsfXQxhLfiNUNU1kM12ed0znFA-k8qZA&libraries=visualization"></script>
-    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="file:///Users/cdoelling/Desktop/DEV%20MKTG/DevHeatMap/map.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 
   </body>

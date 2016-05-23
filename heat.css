@@ -17,6 +17,7 @@ html, body {
   margin-top: -160px;
   padding-bottom: 20px,
 }
+
 .logo {
   position: absolute;
   top: 0px;
@@ -105,39 +106,30 @@ header a {
   z-index: 100;
 }
 
-.main-nav h3 {
-  text-align: center;
-  color: #696969;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 1.4em;
-}
+
   .main-nav a {
     display: block;
-    color: black;
+    color: white;
     padding: 15px;
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.2em;
     text-decoration: none;
+    background: #269da4;
 
 }
 
+.x-close {
+  text-align: right;
+  margin-top: -30px;
+  padding-right: 20px;
+}
+
 .main-nav a:hover {
-  background: #269da4;
 }
 
 
 .main-nav a:focus {
-  background: #269da4;
 }
-/*.main-nav a:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 34px;
-  }
-}*/
 
 .open-menu {
   position: absolute;
@@ -149,9 +141,15 @@ header a {
 
 a {
   text-decoration: none;
+
 }
 .close-menu {
   display: none;
+  position: absolute;
+  top: -65px;
+  right: 50px;
+  color: black;
+  font-size: 2em;
 }
 
 
@@ -160,13 +158,15 @@ a {
 }
 #main-nav:target + .page-wrap {
   width: 80%;
-  .open-menu {
+}
 
-     display: none;
+#main-nav:target {
+  .open-menu {
+    display: none;
   }
-  .close-menu {
+  /*.close-menu {
     display: block;
-  }
+  }*/
 
   .main-header {
     width: 80%;
@@ -174,13 +174,25 @@ a {
   }
 }
 
-.nav-ins {
-  display: none;
+
+ul li {
+  list-style: none;
 }
 
-a:hover + .nav-ins {
+ul li button {
+  border: none;
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2em;
+  background: none;
+}
+
+
+a:hover + .nav-ins{
   display: block;
 }
+
+
 
 
 /*MAP CSS*/
