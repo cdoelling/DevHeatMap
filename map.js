@@ -1069,72 +1069,79 @@ heatmapHuawei.setMap(heatmapHuawei.getMap() ? null : map);
 }
 // INTEL
 
-// var retIntel = [
-//   {location: new google.maps.LatLng(37.75354,-122.542986), weight: 60},
-//   {location: new google.maps.LatLng(30.3308374,-97.8877119), weight: 3},
-//   {location: new google.maps.LatLng(53.2306638,-9.4623484), weight: 3},
-// ]
-//
-// var heatmapIntel= new google.maps.visualization.HeatmapLayer({
-//   data: retIntel,
-//   radius: 20,
-// });
-// heatmapIntel.setMap(null);
-//
-// function toggleIntel() {
-// heatmapIntel.setMap(heatmapIntel.getMap() ? null : map);
-// }
+var retIntel = [
+  {location: new google.maps.LatLng(45.5231332,-122.897381), weight: 17},
+  {location: new google.maps.LatLng(32.676531,33.2573247), weight: 12},
+  {location: new google.maps.LatLng(37.9565022,-122.4286697), weight:11},
+  {location: new google.maps.LatLng(12.9581162,77.7143684), weight:6},
+]
+
+var heatmapIntel= new google.maps.visualization.HeatmapLayer({
+  data: retIntel,
+  radius: 20,
+});
+heatmapIntel.setMap(null);
+
+function toggleIntel() {
+heatmapIntel.setMap(heatmapIntel.getMap() ? null : map);
+}
 //
 // // NETAPP
-//
-// var retNetApp = [
-//   {location: new google.maps.LatLng(37.75354,-122.542986), weight: 60},
-//   {location: new google.maps.LatLng(30.3308374,-97.8877119), weight: 3},
-//   {location: new google.maps.LatLng(53.2306638,-9.4623484), weight: 3},
-// ]
-//
-// var heatmapNetApp= new google.maps.visualization.HeatmapLayer({
-//   data: retNetApp,
-//   radius: 20,
-// });
-// heatmapNetApp.setMap(null);
-//
-// function toggleNetApp() {
-// heatmapNetApp.setMap(heatmapNetApp.getMap() ? null : map);
-// }
+
+var retNetApp = [
+  {location: new google.maps.LatLng(37.4109028,-122.0132916), weight: 9},
+  {location: new google.maps.LatLng(12.9509939,77.6397827), weight: 5},
+  {location: new google.maps.LatLng(35.8573291,-78.8877876), weight: 3},
+  {location: new google.maps.LatLng(39.8064814,-105.3355127), weight: 1},
+  {location: new google.maps.LatLng(42.4572502,-71.4517173), weight: 2},
+]
+
+var heatmapNetApp= new google.maps.visualization.HeatmapLayer({
+  data: retNetApp,
+  radius: 20,
+});
+heatmapNetApp.setMap(null);
+
+function toggleNetApp() {
+heatmapNetApp.setMap(heatmapNetApp.getMap() ? null : map);
+}
+
 // // NETFLIX
-//
-// var retNetflix = [
-//   {location: new google.maps.LatLng(37.75354,-122.542986), weight: 60},
-//   {location: new google.maps.LatLng(30.3308374,-97.8877119), weight: 3},
-//   {location: new google.maps.LatLng(53.2306638,-9.4623484), weight: 3},
-// ]
-//
-// var heatmapNetflix= new google.maps.visualization.HeatmapLayer({
-//   data: retNetflix,
-//   radius: 20,
-// });
-// heatmapNetflix.setMap(null);
-//
-// function toggleNetflix() {
-// heatmapNetflix.setMap(heatmapNetflix.getMap() ? null : map);
-// }
-// // SALESFORCE
-// var retSalesForce = [
-//   {location: new google.maps.LatLng(37.75354,-122.542986), weight: 60},
-//   {location: new google.maps.LatLng(30.3308374,-97.8877119), weight: 3},
-//   {location: new google.maps.LatLng(53.2306638,-9.4623484), weight: 3},
-// ]
-//
-// var heatmapSalesForce= new google.maps.visualization.HeatmapLayer({
-//   data: retSalesForce,
-//   radius: 20,
-// });
-// heatmapSalesForce.setMap(null);
-//
-// function toggleSalesForce() {
-// heatmapSalesForce.setMap(heatmapSalesForce.getMap() ? null : map);
-// }
+
+var retNetflix = [
+  {location: new google.maps.LatLng(37.2595896,-121.9648838), weight: 6},
+]
+
+var heatmapNetflix= new google.maps.visualization.HeatmapLayer({
+  data: retNetflix,
+  radius: 20,
+});
+heatmapNetflix.setMap(null);
+
+function toggleNetflix() {
+heatmapNetflix.setMap(heatmapNetflix.getMap() ? null : map);
+}
+
+
+// SALESFORCE
+var retSalesForce = [
+  {location: new google.maps.LatLng(37.6783365,-122.492136), weight: 27},
+  {location: new google.maps.LatLng(41.8905804,-87.6339423), weight: 3},
+  {location: new google.maps.LatLng(43.6416526,-79.3801093), weight: 4},
+  {location: new google.maps.LatLng(39.8498123,-86.2698343), weight: 3},
+  {location: new google.maps.LatLng(39.8584827,-105.2110297), weight: 1},
+
+]
+
+var heatmapSalesForce= new google.maps.visualization.HeatmapLayer({
+  data: retSalesForce,
+  radius: 20,
+});
+heatmapSalesForce.setMap(null);
+
+function toggleSalesForce() {
+heatmapSalesForce.setMap(heatmapSalesForce.getMap() ? null : map);
+}
 
 
 // -----------------------TELECOM-------------------------
