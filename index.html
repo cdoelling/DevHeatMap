@@ -3,7 +3,7 @@
 <head>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
-  <link href='file:///Users/cdoelling/Desktop/DEV%20MKTG/DevHeatMap/heat.css' rel="stylesheet" type="text/css">
+  <link href='/heat.css' rel="stylesheet" type="text/css">
   <title>Dev HeatMap</title>
   <meta name="viewport" content="initial-scale=1.0">
   <meta charset="utf-8">
@@ -32,7 +32,7 @@
     <nav class="main-nav" id="main-nav">
 
       <a href="#">Insurance <div class="x-close">[X]</div></a>
-        <ul class="nav-ins">
+        <ul>
           <li><button onclick="toggleAIG()">AIG</button></li>
           <li><button onclick="toggleAll()">ALL STATE</button></li>
           <li><button onclick="toggleAmFam()">AMERICAN FAMILY</button></li>
@@ -45,7 +45,7 @@
         </ul>
 
       <a href="#">Financial Services<div class="x-close">[X]</div></a>
-        <ul class="nav-fs">
+        <ul>
           <li><button onclick="toggleAMEX()">AMEX</button></li>
           <li><button onclick="toggleBOA()">BANK OF AMERICA</button></li>
           <li><button onclick="toggleBNP()">BNP PARIBAS</button></li>
@@ -58,34 +58,106 @@
           <li><button onclick="toggleWF()">WELLS FARGO</button></li>
         </ul>
 
-      <a href="#">Health Care<div class="x-close">[X]</div></a>
-        <ul class="nav-health">
-          <li><button onclick="()"></button></li>
-          <li><button onclick="()"></button></li>
-          <li><button onclick="()"></button></li>
-          <li><button onclick="()"></button></li>
-          <li><button onclick="()"></button></li>
-          <li><button onclick="()"></button></li>
-          <li><button onclick="()"></button></li>
-          <li><button onclick="()"></button></li>
-          <li><button onclick="()"></button></li>
-          <li><button onclick="()"></button></li>
-        </ul>
 
       <a href="#">Manufacturing<div class="x-close">[X]</div></a>
-      <a href="#">Oil and Gas<div class="x-close">[X]</div></a>
+        <ul class="">
+          <li><button onclick="toggle3M()">3M</button></li>
+          <li><button onclick="toggleCOKE()">COCA-COLA</button></li>
+          <li><button onclick="toggleDIAMLER()">DIAMLER AG</button></li>
+          <li><button onclick="toggleHIT()">HITATCHI</button></li>
+          <li><button onclick="toggleJJ()">JOHNSON & JOHNSON</button></li>
+          <li><button onclick="toggleLockheed()">LOCKHEED MARTIN</button></li>
+          <li><button onclick="togglePfizer()">PFIZER</button></li>
+          <li><button onclick="toggleSamsung()">SAMSUNG</button></li>
+          <li><button onclick="toggleBD()">STANLEY BLACK&DECKER</button></li>
+          <li><button onclick="toggleVW()">VOLKSWAGEN</button></li>
+        </ul>
+
+      <a href="#">Energy<div class="x-close">[X]</div></a>
+        <ul>
+          <li><button onclick="toggleBP()">BP</button></li>
+          <li><button onclick="toggleChevron()">CHEVRON</button></li>
+          <li><button onclick="toggleExxon()">EXXON</button></li>
+          <li><button onclick="toggleHess()">HESS</button></li>
+          <li><button onclick="togglePetroChina()">PETRO CHINA</button></li>
+          <li><button onclick="toggleP66()">PHILLIPS 66</button></li>
+          <li><button onclick="toggleStatoil()">STATOIL</button></li>
+          <li><button onclick="toggleTotal()">TOTAL</button></li>
+          <li><button onclick="toggleValero()">VALERO</button></li>
+        </ul>
+
       <a href="#">Retail<div class="x-close">[X]</div></a>
+      <ul>
+        <li><button onclick="toggleEstee()">ESTEE LAUDER</button></li>
+        <li><button onclick="toggleJC()">JC PENNEY</button></li>
+        <li><button onclick="toggleKroger()">KROGER</button></li>
+        <li><button onclick="toggleLowes()">LOWES</button></li>
+        <li><button onclick="toggleQVC()">QVC</button></li>
+        <li><button onclick="toggleSafeway()">SAFEWAY</button></li>
+        <li><button onclick="toggleSEARS()">SEARS</button></li>
+        <li><button onclick="toggleTarget()">TARGET</button></li>
+        <li><button onclick="toggleTESCO()">TESCO</button></li>
+        <li><button onclick="toggleWalMart()">WAL-MART</button></li>
+      </ul>
       <a href="#">Technology<div class="x-close">[X]</div></a>
+      <ul>
+        <li><button onclick="toggleApple()">APPLE</button></li>
+        <li><button onclick="toggleAmazon()">AMAZON</button></li>
+        <li><button onclick="toggleAtlassian()">ATLASSIAN</button></li>
+        <li><button onclick="toggleConcur()">CONCUR</button></li>
+        <li><button onclick="toggleDell()">DELL</button></li>
+        <li><button onclick="toggleHuawei()">HUAWEI</button></li>
+        <li><button onclick="toggleIntel()">INTEL</button></li>
+        <li><button onclick="toggleNetApp()">NETAPP</button></li>
+        <li><button onclick="toggleNetflix()">NETFLIX</button></li>
+        <li><button onclick="toggleSalesForce()">SALESFORCE</button></li>
+      </ul>
       <a href="#">Telecom<div class="x-close">[X]</div></a>
+      <ul>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+      </ul>
       <a href="#">Transportation<div class="x-close">[X]</div></a>
+      <ul>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+      </ul>
       <a href="#">Utilities<div class="x-close">[X]</div></a>
+      <ul>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+        <li><button onclick="toggle()"></button></li>
+      </ul>
     </nav>
 
 
     <div id="map"></div>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcsfXQxhLfiNUNU1kM12ed0znFA-k8qZA&libraries=visualization"></script>
-    <script type="text/javascript" src="file:///Users/cdoelling/Desktop/DEV%20MKTG/DevHeatMap/map.js"></script>
+    <script type="text/javascript" src="/map.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 
   </body>
