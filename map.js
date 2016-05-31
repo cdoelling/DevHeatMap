@@ -1146,39 +1146,477 @@ heatmapSalesForce.setMap(heatmapSalesForce.getMap() ? null : map);
 
 // -----------------------TELECOM-------------------------
 
+// ATT
+var telATT = [
+  {location: new google.maps.LatLng(33.7778462,-84.6927463), weight: 4},
+  {location: new google.maps.LatLng(40.7358354,-74.0153517), weight: 4},
+  {location: new google.maps.LatLng(47.6103217,-123.4425868), weight: 3},
+  {location: new google.maps.LatLng(32.7752075,-96.9960648), weight: 3},
+
+]
+
+var heatmapATT= new google.maps.visualization.HeatmapLayer({
+  data: telATT,
+  radius: 20,
+});
+heatmapATT.setMap(null);
+
+function toggleATT() {
+heatmapATT.setMap(heatmapATT.getMap() ? null : map);
+}
+
+// CENTURY LINK
+
+var telCentury = [
+  {location: new google.maps.LatLng(12.956242,77.6292168), weight: 3},
+  {location: new google.maps.LatLng(39.8020812,-105.3884353), weight: 4},
+
+]
+
+var heatmapCentury= new google.maps.visualization.HeatmapLayer({
+  data: telCentury,
+  radius: 20,
+});
+heatmapCentury.setMap(null);
+
+function toggleCentury() {
+heatmapCentury.setMap(heatmapCentury.getMap() ? null : map);
+}
+
 // CHINA MOBILE
+var telChina = [
+  {location: new google.maps.LatLng(22.2845829,114.1525073), weight: 1},
+]
+
+var heatmapChina= new google.maps.visualization.HeatmapLayer({
+  data: telChina,
+  radius: 20,
+});
+heatmapChina.setMap(null);
+
+function toggleChina() {
+heatmapChina.setMap(heatmapChina.getMap() ? null : map);
+}
+
 // DUETCHE TELEKOM
-// KDDI
-// ORANGE
+
+var telTelekom = [
+  {location: new google.maps.LatLng(49.9726694,8.4432966), weight: 1},
+]
+
+var heatmapTelekom= new google.maps.visualization.HeatmapLayer({
+  data: telTelekom,
+  radius: 20,
+});
+heatmapTelekom.setMap(null);
+
+function toggleTelekom() {
+heatmapTelekom.setMap(heatmapTelekom.getMap() ? null : map);
+}
+
+// SPRINT
+var telSprint = [
+  {location: new google.maps.LatLng(38.9145737,-94.6600838), weight: 6},
+  {location: new google.maps.LatLng(38.9366832,-77.0398846), weight: 2},
+  {location: new google.maps.LatLng(32.8268745,-96.9188077), weight: 1},
+]
+
+var heatmapSprint= new google.maps.visualization.HeatmapLayer({
+  data: telSprint,
+  radius: 20,
+});
+heatmapSprint.setMap(null);
+
+function toggleSprint() {
+heatmapSprint.setMap(heatmapSprint.getMap() ? null : map);
+}
+
+
 // SWISSCOM
+var telSwisscom = [
+  {location: new google.maps.LatLng(47.3805379,8.4965093), weight: 10},
+  {location: new google.maps.LatLng(47.3801762,7.9875233), weight: 3},
+  {location: new google.maps.LatLng(47.5367778,7.5345732), weight: 6},
+]
+
+var heatmapSwisscom= new google.maps.visualization.HeatmapLayer({
+  data: telSwisscom,
+  radius: 20,
+});
+heatmapSwisscom.setMap(null);
+
+function toggleSwisscom() {
+heatmapSwisscom.setMap(heatmapSwisscom.getMap() ? null : map);
+}
+
 // T-MOBILE
-// TELEFONICA BRAZIL
+var telTmobile = [
+  {location: new google.maps.LatLng(47.5871987,-122.3882261), weight: 4},
+]
+
+var heatmapTmobile= new google.maps.visualization.HeatmapLayer({
+  data: telTmobile,
+  radius: 20,
+});
+heatmapTmobile.setMap(null);
+
+function toggleTmobile() {
+heatmapTmobile.setMap(heatmapTmobile.getMap() ? null : map);
+}
+
 // TELSTRA
-// TIM BRAZIL
+var telTelstra = [
+  {location: new google.maps.LatLng(-37.8257323,144.8923267), weight: 2},
+]
+
+var heatmapTelstra= new google.maps.visualization.HeatmapLayer({
+  data: telTelstra,
+  radius: 20,
+});
+heatmapTelstra.setMap(null);
+
+function toggleTelstra() {
+heatmapTelstra.setMap(heatmapTelstra.getMap() ? null : map);
+}
+
 // VERIZON
+
+var telVerizon = [
+  {location: new google.maps.LatLng(32.6681173,-105.9968782), weight: 2},
+  {location: new google.maps.LatLng(37.8073872,-122.5197848), weight: 2},
+  {location: new google.maps.LatLng(12.9939509,80.2057607), weight: 3},
+]
+
+var heatmapVerizon= new google.maps.visualization.HeatmapLayer({
+  data: telVerizon,
+  radius: 20,
+});
+heatmapVerizon.setMap(null);
+
+function toggleVerizon() {
+heatmapVerizon.setMap(heatmapVerizon.getMap() ? null : map);
+}
+
 
 // -----------------------TRANSPORTATION-------------------------
 
 // BNSF
+
+var tranBNSF = [
+  {location: new google.maps.LatLng(32.8926314,-97.1423279), weight: 3},
+]
+
+var heatmapBNSF= new google.maps.visualization.HeatmapLayer({
+  data: tranBNSF,
+  radius: 20,
+});
+heatmapBNSF.setMap(null);
+
+function toggleBNSF() {
+heatmapBNSF.setMap(heatmapBNSF.getMap() ? null : map);
+}
+
 // BRUSSELS AIR
+var tranBRAir = [
+  {location: new google.maps.LatLng(40.7229782,-73.5775905), weight: 2},
+]
+
+var heatmapBRAir= new google.maps.visualization.HeatmapLayer({
+  data: tranBRAir,
+  radius: 20,
+});
+heatmapBRAir.setMap(null);
+
+function toggleBRAir() {
+heatmapBRAir.setMap(heatmapBRAir.getMap() ? null : map);
+}
+
 // FEDEX
+var tranFEDEX = [
+  {location: new google.maps.LatLng(35.1092661,-90.0465699), weight: 3},
+]
+
+var heatmapFEDEX= new google.maps.visualization.HeatmapLayer({
+  data: tranFEDEX,
+  radius: 20,
+});
+heatmapFEDEX.setMap(null);
+
+function toggleFEDEX() {
+heatmapFEDEX.setMap(heatmapFEDEX.getMap() ? null : map);
+}
+
 // HERTZ
+
+var tranHertz = [
+  {location: new google.maps.LatLng(35.6182556,-97.5770614), weight: 2},
+]
+
+var heatmapHertz= new google.maps.visualization.HeatmapLayer({
+  data: tranHertz,
+  radius: 20,
+});
+heatmapHertz.setMap(null);
+
+function toggleHertz() {
+heatmapHertz.setMap(heatmapHertz.getMap() ? null : map);
+}
+
 // JETBLUE
+
+var tranJet = [
+  {location: new google.maps.LatLng(40.7627986,-73.9225154), weight: 1},
+]
+
+var heatmapJet= new google.maps.visualization.HeatmapLayer({
+  data: tranJet,
+  radius: 20,
+});
+heatmapJet.setMap(null);
+
+function toggleJet() {
+heatmapJet.setMap(heatmapJet.getMap() ? null : map);
+}
+
 // LYFT
+
+var tranLyft = [
+  {location: new google.maps.LatLng(37.7689525,-122.4144172), weight: 2},
+]
+
+var heatmapLyft= new google.maps.visualization.HeatmapLayer({
+  data: tranLyft,
+  radius: 20,
+});
+heatmapLyft.setMap(null);
+
+function toggleLyft() {
+heatmapLyft.setMap(heatmapLyft.getMap() ? null : map);
+}
+
 // SOUTHWEST
+
+var tranSW = [
+  {location: new google.maps.LatLng(32.8214597,-97.0115351), weight: 5},
+]
+
+var heatmapSW= new google.maps.visualization.HeatmapLayer({
+  data: tranSW,
+  radius: 20,
+});
+heatmapSW.setMap(null);
+
+function toggleSW() {
+heatmapSW.setMap(heatmapSW.getMap() ? null : map);
+}
+
 // UBER
+var tranUBER = [
+  {location: new google.maps.LatLng(37.7758232,-122.4202437), weight: 10},
+  {location: new google.maps.LatLng(47.6003868,-122.3341582), weight: 1},
+  {location: new google.maps.LatLng(39.6094036,-105.1946844), weight: 1},
+]
+
+var heatmapUBER= new google.maps.visualization.HeatmapLayer({
+  data: tranUBER,
+  radius: 20,
+});
+heatmapUBER.setMap(null);
+
+function toggleUBER() {
+heatmapUBER.setMap(heatmapUBER.getMap() ? null : map);
+}
+
 // UPS
+var tranUPS = [
+  {location: new google.maps.LatLng(40.7412525,-74.1076974), weight: 5},
+  {location: new google.maps.LatLng(33.7600392,-84.6144513), weight: 2},
+  {location: new google.maps.LatLng(38.2182303,-85.7514653), weight: 2},
+]
+
+var heatmapUPS= new google.maps.visualization.HeatmapLayer({
+  data: tranUPS,
+  radius: 20,
+});
+heatmapUPS.setMap(null);
+
+function toggleUPS() {
+heatmapUPS.setMap(heatmapUPS.getMap() ? null : map);
+}
+
 // UNITED
+
+var tranUnited = [
+  {location: new google.maps.LatLng(41.9111625,-87.9649613), weight: 4},
+  {location: new google.maps.LatLng(29.7693585,-95.576424), weight: 2},
+]
+
+var heatmapUnited= new google.maps.visualization.HeatmapLayer({
+  data: tranUnited,
+  radius: 20,
+});
+heatmapUnited.setMap(null);
+
+function toggleUnited() {
+heatmapUnited.setMap(heatmapUnited.getMap() ? null : map);
+}
 
 // -----------------------UTILITIES-------------------------
 
 // CENTERPOINT
+var energyCenter = [
+  {location: new google.maps.LatLng(29.7705619,-95.5764286), weight: 2},
+]
+
+var heatmapCenter= new google.maps.visualization.HeatmapLayer({
+  data: energyCenter,
+  radius: 20,
+});
+heatmapCenter.setMap(null);
+
+function toggleCenter() {
+heatmapCenter.setMap(heatmapCenter.getMap() ? null : map);
+}
+
 // EVERSOURCE
-// EXCELON
+
+var energyEversource = [
+  {location: new google.maps.LatLng(41.7648568,-72.6744087), weight: 1},
+]
+
+var heatmapEversource= new google.maps.visualization.HeatmapLayer({
+  data: energyEversource,
+  radius: 20,
+});
+heatmapEversource.setMap(null);
+
+function toggleEversource() {
+heatmapEversource.setMap(heatmapEversource.getMap() ? null : map);
+}
+
+// EXELON
+
+var energyExelon = [
+  {location: new google.maps.LatLng(39.284458,-76.9483342), weight: 1},
+]
+
+var heatmapExelon= new google.maps.visualization.HeatmapLayer({
+  data: energyExelon,
+  radius: 20,
+});
+heatmapExelon.setMap(null);
+
+function toggleExelon() {
+heatmapExelon.setMap(heatmapExelon.getMap() ? null : map);
+}
+
 // FIRST ENERGY
+
+var energy1energy = [
+  {location: new google.maps.LatLng(41.2944194,-82.1107215), weight: 1},
+]
+
+var heatmap1energy= new google.maps.visualization.HeatmapLayer({
+  data: energy1energy,
+  radius: 20,
+});
+heatmap1energy.setMap(null);
+
+function toggle1energy() {
+heatmap1energy.setMap(heatmap1energy.getMap() ? null : map);
+}
+
 // HYDRO QUEBEC
+
+var energyHyrdo = [
+  {location: new google.maps.LatLng(45.4513638,-73.8320897), weight: 3},
+]
+
+var heatmapHyrdo= new google.maps.visualization.HeatmapLayer({
+  data: energyHyrdo,
+  radius: 20,
+});
+heatmapHyrdo.setMap(null);
+
+function toggleHyrdo() {
+heatmapHyrdo.setMap(heatmapHyrdo.getMap() ? null : map);
+}
+
 // PIEDMONT GAS
+
+var energyPiedmont = [
+  {location: new google.maps.LatLng(35.1874459,-80.9713636), weight: 1},
+]
+
+var heatmapPiedmont= new google.maps.visualization.HeatmapLayer({
+  data: energyPiedmont,
+  radius: 20,
+});
+heatmapPiedmont.setMap(null);
+
+function togglePiedmont() {
+heatmapPiedmont.setMap(heatmapPiedmont.getMap() ? null : map);
+}
+
 // PORTLAND ELECTRIC
+
+var energyPortland = [
+  {location: new google.maps.LatLng(45.1363558,-123.6548345), weight: 3},
+]
+
+var heatmapPortland= new google.maps.visualization.HeatmapLayer({
+  data: energyPortland,
+  radius: 20,
+});
+heatmapPortland.setMap(null);
+
+function togglePortland() {
+heatmapPortland.setMap(heatmapPortland.getMap() ? null : map);
+}
+
 // SCANA CORP
+
+var energyScana = [
+  {location: new google.maps.LatLng(33.9564896,-81.0495864), weight: 1},
+]
+
+var heatmapScana= new google.maps.visualization.HeatmapLayer({
+  data: energyScana,
+  radius: 20,
+});
+heatmapScana.setMap(null);
+
+function toggleScana() {
+heatmapScana.setMap(heatmapScana.getMap() ? null : map);
+}
 // SOUTHWEST GAS
+
+var energySWGAS = [
+  {location: new google.maps.LatLng(36.1586516,-115.267303), weight: 1},
+]
+
+var heatmapSWGAS= new google.maps.visualization.HeatmapLayer({
+  data: energySWGAS,
+  radius: 20,
+});
+heatmapSWGAS.setMap(null);
+
+function toggleSWGAS() {
+heatmapSWGAS.setMap(heatmapSWGAS.getMap() ? null : map);
+}
 // XCEL
+
+var energyXCEL = [
+  {location: new google.maps.LatLng(45.2958176,-95.2048332), weight: 1},
+  {location: new google.maps.LatLng(39.585507,-105.9673668), weight: 1},
+]
+
+var heatmapXCEL= new google.maps.visualization.HeatmapLayer({
+  data: energyXCEL,
+  radius: 20,
+});
+heatmapXCEL.setMap(null);
+
+function toggleXCEL() {
+heatmapXCEL.setMap(heatmapXCEL.getMap() ? null : map);
+}
