@@ -192,7 +192,15 @@ a:hover + .nav-ins{
   display: block;
 }
 
-
+.add {
+  display: block;
+  color: white;
+  padding: 15px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+  background: black;
+}
 
 
 /*MAP CSS*/
